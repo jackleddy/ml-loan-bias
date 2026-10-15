@@ -1,0 +1,11 @@
+{
+  "year": 2024,
+  "loan_amount": 335000,
+  "annual_income": 116000,
+  "cltv_percent": 80,
+  "dti": 35,
+  "conforming_status": "C",
+  "latitude": 37.54,
+  "longitude": -77.43,
+  "actual_rate_spread": 0.5
+}
