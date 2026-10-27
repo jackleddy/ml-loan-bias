@@ -1,0 +1,53 @@
+{
+  "input": "D:\\ComputerEngineering\\ml-loan-bias\\totalVA_cleaned.csv.gz",
+  "input_sha256": "454348233d972c25d2e685d3d41ab45db30943244377c8ed7d9d156bcb8c2dcd",
+  "input_rows": 918502,
+  "cohort_rows_before_cleaning": 438865,
+  "primary_rows": 438863,
+  "eligible_including_outliers": 438865,
+  "exclusive_row_counts": {
+    "not_conventional_first_lien": 360415,
+    "included": 438863,
+    "not_360_month_term": 119222,
+    "target_outlier": 2
+  },
+  "primary_lenders_by_year": {
+    "2021": 695,
+    "2022": 684,
+    "2023": 91,
+    "2024": 601,
+    "2025": 592
+  },
+  "spread_bounds": [
+    -10.0,
+    20.0
+  ],
+  "processed_sha256": "70d2ef0e6e6eca473606443c882b0ee2ad9a38a06e4db9c3112bbed519ff08e3",
+  "references": {
+    "tracts_2017.zip": {
+      "url": "https://www2.census.gov/geo/tiger/TIGER2017/TRACT/tl_2017_51_tract.zip",
+      "sha256": "d9be8fd15f011a56e4409088e93f36f52d52ac7e57beb6638e940df559d19673",
+      "retrieved_at_utc": "2026-10-15T21:08:42.147658+00:00"
+    },
+    "tracts_2020.zip": {
+      "url": "https://www2.census.gov/geo/tiger/TIGER2020/TRACT/tl_2020_51_tract.zip",
+      "sha256": "9f78de13dd82187e8b09a6ebadf26e8c61b7583d0445edc5dea1ee3b625cac10",
+      "retrieved_at_utc": "2026-10-15T21:08:42.772870+00:00"
+    },
+    "apor_fixed.txt": {
+      "url": "https://files.ffiec.cfpb.gov/apor/YieldTableFixed.txt",
+      "sha256": "4cb2d8db005e97771c673ed98b909a4818075b6dd741c54f30d49d77b5985c96",
+      "retrieved_at_utc": "2026-10-15T21:08:43.203450+00:00"
+    },
+    "apor_adjustable.txt": {
+      "url": "https://files.ffiec.cfpb.gov/apor/YieldTableAdjustable.txt",
+      "sha256": "6c39ebee8a1ae573905dec18dac2b4fb5958029791c17c9006f51b275c51eb55",
+      "retrieved_at_utc": "2026-10-15T21:08:43.528973+00:00"
+    }
+  },
+  "limitations": [
+    "Prior cleaning exclusions cannot be reconstructed.",
+    "Occupancy, fixed-rate status, purpose, exactly one unit, credit score, and precise timing are unavailable.",
+    "Input coverage is not verified against the full HMDA population; 2023 is unusually sparse."
+  ]
+}

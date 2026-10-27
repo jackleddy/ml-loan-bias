@@ -1,0 +1,2159 @@
+{
+  "selected_model": "xgboost",
+  "cross_validation": [
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 34.33757379878457,
+      "rmse_bp": 52.57490149594112
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 25.0553743344768,
+      "rmse_bp": 38.45756966251875
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 41.8567418591121,
+      "rmse_bp": 59.84320932061177
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 61.20989704418586,
+      "rmse_bp": 85.29653699200506
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 45.64047569346874,
+      "rmse_bp": 68.27717392670003
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 38.36635737827755,
+      "rmse_bp": 56.97207371713332
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 36.0459419988942,
+      "rmse_bp": 49.9098983306842
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 39.03593148099724,
+      "rmse_bp": 63.824875194172925
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 33.77161507022486,
+      "rmse_bp": 49.21927436306293
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 42.324335065261764,
+      "rmse_bp": 65.08887222848774
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 38.50521007718986,
+      "rmse_bp": 51.6889249368645
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 32.70952202823426,
+      "rmse_bp": 47.53146329708376
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 34.50984532550158,
+      "rmse_bp": 55.42979152495688
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 32.54258129937664,
+      "rmse_bp": 49.073139693801025
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275638,
+      "mae_bp": 34.04276617595017,
+      "rmse_bp": 52.55837839732762
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 35.15662948250731,
+      "rmse_bp": 54.233778360154886
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166148,
+      "mae_bp": 33.33912922156473,
+      "rmse_bp": 49.271847894299384
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133494,
+      "mae_bp": 35.54832637215999,
+      "rmse_bp": 56.28260573582949
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 32.08050612868432,
+      "rmse_bp": 48.02549193330529
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 32.123468917509534,
+      "rmse_bp": 48.36211728509346
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 43.958635769264696,
+      "rmse_bp": 61.897377403143985
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 44.87731710895196,
+      "rmse_bp": 79.41128734215084
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 32.966077937186775,
+      "rmse_bp": 48.23953983475852
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333131,
+      "mae_bp": 34.05480320611047,
+      "rmse_bp": 50.996256877588394
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 32.88459503639907,
+      "rmse_bp": 50.45669430640366
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 24.0113570514211,
+      "rmse_bp": 36.81224429083484
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 40.323294147830104,
+      "rmse_bp": 57.84188243722458
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 58.83635209091796,
+      "rmse_bp": 81.87817277682534
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 43.384881472254996,
+      "rmse_bp": 65.06172547232545
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 36.628413052334174,
+      "rmse_bp": 54.76688968641689
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 34.48497897978358,
+      "rmse_bp": 47.8766601252481
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 36.90292774843265,
+      "rmse_bp": 61.19878821105779
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 32.13588006164838,
+      "rmse_bp": 47.36584759222015
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 40.03257236590333,
+      "rmse_bp": 61.537765219553464
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 35.63900604329822,
+      "rmse_bp": 48.138012790043774
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 31.231957515052578,
+      "rmse_bp": 45.525394188209475
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 32.96577525365164,
+      "rmse_bp": 53.83123446592178
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 31.26759711460407,
+      "rmse_bp": 47.2266555732616
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275638,
+      "mae_bp": 32.6712877997153,
+      "rmse_bp": 50.520817267167516
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 33.36186627030036,
+      "rmse_bp": 51.52487643044509
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166148,
+      "mae_bp": 32.086035021366314,
+      "rmse_bp": 47.3751306009441
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133494,
+      "mae_bp": 34.01516346545016,
+      "rmse_bp": 54.23074358684973
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 30.988501990929944,
+      "rmse_bp": 46.42677105840673
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 30.918625270847578,
+      "rmse_bp": 46.51766065105683
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 42.10119096350039,
+      "rmse_bp": 58.59804397599759
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 43.651532645702716,
+      "rmse_bp": 78.45689703881588
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 31.538715643505643,
+      "rmse_bp": 46.2587838779463
+    },
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333131,
+      "mae_bp": 32.53077181646613,
+      "rmse_bp": 48.65420551721101
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "overall",
+      "group": "All",
+      "n": 431396,
+      "mae_bp": 33.86528374365738,
+      "rmse_bp": 51.826542124052175
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 25.050350325687937,
+      "rmse_bp": 38.46243650657677
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 41.833111796827644,
+      "rmse_bp": 59.80700886295146
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 45.64415213648738,
+      "rmse_bp": 68.30850186939361
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 38.36636140801489,
+      "rmse_bp": 56.97944413962532
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 858,
+      "mae_bp": 35.72994498024656,
+      "rmse_bp": 49.36793523048297
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1166,
+      "mae_bp": 38.8495391023531,
+      "rmse_bp": 63.86091354304744
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 43184,
+      "mae_bp": 33.424911223368646,
+      "rmse_bp": 48.63374382710457
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 30670,
+      "mae_bp": 41.77840287091152,
+      "rmse_bp": 64.24820152564523
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 38.57172165370366,
+      "rmse_bp": 51.779354406209286
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11262,
+      "mae_bp": 32.331588767905586,
+      "rmse_bp": 47.00426515979388
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 588,
+      "mae_bp": 34.4237589422174,
+      "rmse_bp": 55.523052512218094
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 72742,
+      "mae_bp": 32.25485539132831,
+      "rmse_bp": 48.60823243886728
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 270885,
+      "mae_bp": 33.50648597650527,
+      "rmse_bp": 51.71483102470184
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 101792,
+      "mae_bp": 34.67401376794134,
+      "rmse_bp": 53.450287440030586
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 162933,
+      "mae_bp": 32.798402778233275,
+      "rmse_bp": 48.43777306772603
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 131444,
+      "mae_bp": 35.1226706929005,
+      "rmse_bp": 55.585070230379294
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35227,
+      "mae_bp": 31.7712053251493,
+      "rmse_bp": 47.50980985591596
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 70849,
+      "mae_bp": 31.82380218815576,
+      "rmse_bp": 47.955420393800786
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 130,
+      "mae_bp": 44.238652292087856,
+      "rmse_bp": 62.136696561465534
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 24596,
+      "mae_bp": 44.49449590596865,
+      "rmse_bp": 78.92390102516816
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8632,
+      "mae_bp": 32.58584088916759,
+      "rmse_bp": 47.70571939087037
+    },
+    {
+      "scenario": "without_2023",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 327189,
+      "mae_bp": 33.53793911162569,
+      "rmse_bp": 50.13628069970576
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "overall",
+      "group": "All",
+      "n": 431396,
+      "mae_bp": 32.41859085877128,
+      "rmse_bp": 49.712392149910414
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 24.002152175222747,
+      "rmse_bp": 36.79336022533483
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 40.29414947292941,
+      "rmse_bp": 57.80689011220193
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 43.347675333176824,
+      "rmse_bp": 65.02462559647742
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 36.625288698602276,
+      "rmse_bp": 54.748433248243934
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 858,
+      "mae_bp": 34.10189073115429,
+      "rmse_bp": 47.37670960409318
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1166,
+      "mae_bp": 36.730944684891305,
+      "rmse_bp": 61.29112955851789
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 43184,
+      "mae_bp": 31.785025213195205,
+      "rmse_bp": 46.747586892061435
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 30670,
+      "mae_bp": 39.48716917969454,
+      "rmse_bp": 60.70216717017479
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 35.79256853573933,
+      "rmse_bp": 48.373211744468676
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11262,
+      "mae_bp": 30.89845026161851,
+      "rmse_bp": 45.12473718322637
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 588,
+      "mae_bp": 32.69425629292241,
+      "rmse_bp": 53.73441026442991
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 72742,
+      "mae_bp": 30.990058173503332,
+      "rmse_bp": 46.767937131567145
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 270885,
+      "mae_bp": 32.141085088872394,
+      "rmse_bp": 49.681018060970764
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 101792,
+      "mae_bp": 32.88645672446926,
+      "rmse_bp": 50.73121450615359
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 162933,
+      "mae_bp": 31.553071067528744,
+      "rmse_bp": 46.56181567260557
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 131444,
+      "mae_bp": 33.59240622481936,
+      "rmse_bp": 53.52445400981747
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35227,
+      "mae_bp": 30.68996642213373,
+      "rmse_bp": 45.93567588088231
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 70849,
+      "mae_bp": 30.625648249551496,
+      "rmse_bp": 46.12299663515121
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 130,
+      "mae_bp": 42.742536227517405,
+      "rmse_bp": 59.50621131034758
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 24596,
+      "mae_bp": 43.23667339952107,
+      "rmse_bp": 77.89246187994928
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8632,
+      "mae_bp": 31.178979926073012,
+      "rmse_bp": 45.69810771297918
+    },
+    {
+      "scenario": "without_2023",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 327189,
+      "mae_bp": 32.02219868611708,
+      "rmse_bp": 47.803459424576964
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 34.375838643092784,
+      "rmse_bp": 52.61225598053095
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 25.05483987551657,
+      "rmse_bp": 38.48095440661983
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 41.91035761248184,
+      "rmse_bp": 59.89970361635293
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 61.218350412507185,
+      "rmse_bp": 85.24032722177247
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 45.729817593000696,
+      "rmse_bp": 68.3031389726913
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 38.45713820848652,
+      "rmse_bp": 57.04438025656974
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 36.15518069132246,
+      "rmse_bp": 50.03379393779343
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 39.126032791257295,
+      "rmse_bp": 63.86430129758413
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 34.01041086821835,
+      "rmse_bp": 49.372622724509
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 42.41028620865458,
+      "rmse_bp": 65.17396730072676
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 38.69557994507433,
+      "rmse_bp": 51.61662419125276
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 32.77164281460628,
+      "rmse_bp": 47.5884151459858
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 34.57058811173532,
+      "rmse_bp": 55.51877289810796
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 32.59758706447194,
+      "rmse_bp": 49.12932286958602
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275638,
+      "mae_bp": 34.03759408418847,
+      "rmse_bp": 52.56598959271774
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 35.2625448163305,
+      "rmse_bp": 54.30595279241525
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166148,
+      "mae_bp": 33.32298230816262,
+      "rmse_bp": 49.29065126431726
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133494,
+      "mae_bp": 35.602965996203714,
+      "rmse_bp": 56.314112573719974
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 32.1145713636754,
+      "rmse_bp": 48.06392931073909
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 32.164542456077406,
+      "rmse_bp": 48.40628209444269
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 44.19442446267446,
+      "rmse_bp": 62.147868496624284
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 44.91424805847374,
+      "rmse_bp": 79.33484683388257
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 32.96918744338332,
+      "rmse_bp": 48.26924886812737
+    },
+    {
+      "scenario": "without_geography",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333131,
+      "mae_bp": 34.09341323459233,
+      "rmse_bp": 51.0460375587291
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 33.097200238987085,
+      "rmse_bp": 50.68315305119195
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 24.17092193762579,
+      "rmse_bp": 37.031009815166364
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 40.54646330862665,
+      "rmse_bp": 58.0691115160309
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 59.00213360182912,
+      "rmse_bp": 82.10140346771773
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 43.66171480537539,
+      "rmse_bp": 65.27818097844553
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 36.933887370354746,
+      "rmse_bp": 55.059866153215964
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 34.62851150973034,
+      "rmse_bp": 48.10160221822814
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 37.01387928154809,
+      "rmse_bp": 61.24785927328899
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 32.63717658593663,
+      "rmse_bp": 47.65930721404772
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 40.269930509452216,
+      "rmse_bp": 61.837282724085526
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 35.47920419842732,
+      "rmse_bp": 47.38598184652452
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 31.471249309355535,
+      "rmse_bp": 45.77161308881748
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 32.937686682172746,
+      "rmse_bp": 53.98567420627123
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 31.45888834688427,
+      "rmse_bp": 47.43324046807996
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275638,
+      "mae_bp": 32.84078493355781,
+      "rmse_bp": 50.733462325487665
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 33.67679120364017,
+      "rmse_bp": 51.82818863205596
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166148,
+      "mae_bp": 32.20549775214098,
+      "rmse_bp": 47.54256072754715
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133494,
+      "mae_bp": 34.27154140752057,
+      "rmse_bp": 54.469830702410285
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 31.174152798257637,
+      "rmse_bp": 46.63641977800162
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 31.08703257810786,
+      "rmse_bp": 46.70760591143257
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 42.365536818916254,
+      "rmse_bp": 58.97601342350388
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 43.79418273374826,
+      "rmse_bp": 78.44497698897574
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 31.65712686036158,
+      "rmse_bp": 46.356765358497455
+    },
+    {
+      "scenario": "without_geography",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333131,
+      "mae_bp": 32.760622530764685,
+      "rmse_bp": 48.92314181014914
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438865,
+      "mae_bp": 35.03822654647144,
+      "rmse_bp": 461.69263787352514
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205271,
+      "mae_bp": 26.464782778088303,
+      "rmse_bp": 671.4265275258065
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 41.88943026241005,
+      "rmse_bp": 59.86670119629546
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 61.25226145271301,
+      "rmse_bp": 85.32408425220798
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62657,
+      "mae_bp": 45.84128293160517,
+      "rmse_bp": 79.06199025618437
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 38.39810630722379,
+      "rmse_bp": 56.99766529018091
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 36.18027898216929,
+      "rmse_bp": 50.12352680377947
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 38.98201193349213,
+      "rmse_bp": 63.87969699267374
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 33.560963815125646,
+      "rmse_bp": 49.13521362268705
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 42.371615931275386,
+      "rmse_bp": 65.14996879438746
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 37.97807592090079,
+      "rmse_bp": 51.70429399930715
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 32.71899041479715,
+      "rmse_bp": 47.59488473202767
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 34.565921528898,
+      "rmse_bp": 55.50804205863907
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 32.48775661057097,
+      "rmse_bp": 49.08995362774732
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275640,
+      "mae_bp": 35.20063896294434,
+      "rmse_bp": 581.1605467275333
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 35.12754469118642,
+      "rmse_bp": 54.26108421553993
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166149,
+      "mae_bp": 33.42464972023992,
+      "rmse_bp": 55.07803764441731
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133495,
+      "mae_bp": 37.78283542200588,
+      "rmse_bp": 833.119586461486
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 32.02440751028477,
+      "rmse_bp": 48.03183527159983
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 32.0722120287222,
+      "rmse_bp": 48.38660388779285
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 44.04234807799921,
+      "rmse_bp": 61.787396519438566
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 44.92689332425239,
+      "rmse_bp": 79.52677830815492
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 32.96893313809859,
+      "rmse_bp": 48.30530705988391
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333133,
+      "mae_bp": 34.98504394053597,
+      "rmse_bp": 528.9342417037482
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438865,
+      "mae_bp": 37.53697958480707,
+      "rmse_bp": 476.89374194745807
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205271,
+      "mae_bp": 29.421032259863107,
+      "rmse_bp": 682.7672082895072
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 44.1758298102763,
+      "rmse_bp": 130.69502936949192
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 61.07489293462953,
+      "rmse_bp": 99.80850395475196
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62657,
+      "mae_bp": 47.7173232704219,
+      "rmse_bp": 146.38039019121604
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 40.681544065597386,
+      "rmse_bp": 125.38841621409271
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 36.52427046190097,
+      "rmse_bp": 61.559219422296806
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 43.572889768237886,
+      "rmse_bp": 198.7230558745587
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 40.7561646603951,
+      "rmse_bp": 179.39548076217454
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 42.58050956901294,
+      "rmse_bp": 92.12077620148742
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 36.0992253561209,
+      "rmse_bp": 49.167100683355386
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 34.18285924965134,
+      "rmse_bp": 68.35582484970308
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 51.35126689247722,
+      "rmse_bp": 384.2997115953737
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 35.332235791450955,
+      "rmse_bp": 118.98921569231777
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275640,
+      "mae_bp": 37.12742887923001,
+      "rmse_bp": 592.8881163422069
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 36.90958441740194,
+      "rmse_bp": 126.35663284402196
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166149,
+      "mae_bp": 35.470521212800904,
+      "rmse_bp": 111.7673790548435
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133495,
+      "mae_bp": 41.34329022449652,
+      "rmse_bp": 846.7878363056641
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 34.73951199857057,
+      "rmse_bp": 100.28738440617602
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 34.99933106117241,
+      "rmse_bp": 118.99567860748664
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 42.8033552062874,
+      "rmse_bp": 59.29833849726741
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 47.86323868995272,
+      "rmse_bp": 149.31933954240895
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 37.82968888035829,
+      "rmse_bp": 179.22887348506057
+    },
+    {
+      "scenario": "including_outliers",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333133,
+      "mae_bp": 37.29775761590108,
+      "rmse_bp": 542.2495679504103
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 34.370170811800406,
+      "rmse_bp": 52.609014360769045
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 25.196912960649943,
+      "rmse_bp": 38.51235031257654
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 41.89905483936087,
+      "rmse_bp": 59.8987568007989
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 61.061266562454705,
+      "rmse_bp": 85.39132805671808
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 45.4366081518323,
+      "rmse_bp": 68.3150672533331
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 38.291926449490255,
+      "rmse_bp": 56.9220333630473
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 35.79138538771657,
+      "rmse_bp": 49.63614219961039
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 39.038372145368136,
+      "rmse_bp": 63.81214489466519
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 33.67883249712078,
+      "rmse_bp": 49.19801167769133
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 42.243797662332746,
+      "rmse_bp": 64.97415408962848
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 38.33820976595065,
+      "rmse_bp": 51.55789363609815
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 32.73534542488047,
+      "rmse_bp": 47.5197895003035
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 34.476452417400424,
+      "rmse_bp": 55.28119593333381
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 32.57699273028665,
+      "rmse_bp": 49.10691939161312
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275638,
+      "mae_bp": 34.10924084421388,
+      "rmse_bp": 52.625222079937984
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 35.10982215786549,
+      "rmse_bp": 54.21312012942893
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166148,
+      "mae_bp": 33.42966479518859,
+      "rmse_bp": 49.32644787210635
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133494,
+      "mae_bp": 35.56283479678037,
+      "rmse_bp": 56.32899995227808
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 32.14139674554001,
+      "rmse_bp": 48.08810826862719
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 32.16651650400188,
+      "rmse_bp": 48.40848350900906
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 43.62387056357307,
+      "rmse_bp": 62.02378978687059
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 44.92469016069208,
+      "rmse_bp": 79.5449982207764
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 32.984080503222565,
+      "rmse_bp": 48.19329523691099
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "linear",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333131,
+      "mae_bp": 34.08456769645941,
+      "rmse_bp": 51.01855054479153
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 33.02167506135107,
+      "rmse_bp": 50.56967898082818
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2021",
+      "n": 205270,
+      "mae_bp": 24.21000643661668,
+      "rmse_bp": 36.94608637939425
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2022",
+      "n": 96815,
+      "mae_bp": 40.44825073386259,
+      "rmse_bp": 57.9613022242811
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2023",
+      "n": 7467,
+      "mae_bp": 58.88350189072147,
+      "rmse_bp": 81.89713790184774
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2024",
+      "n": 62656,
+      "mae_bp": 43.43784612319494,
+      "rmse_bp": 65.19808866183406
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "activity_year",
+      "group": "2025",
+      "n": 66655,
+      "mae_bp": 36.68263702788362,
+      "rmse_bp": 54.83641855608643
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "2 or more minority races",
+      "n": 872,
+      "mae_bp": 34.18538969987768,
+      "rmse_bp": 47.51112788271871
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "American Indian or Alaska Native",
+      "n": 1186,
+      "mae_bp": 37.18291767804913,
+      "rmse_bp": 61.34520508108825
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Asian",
+      "n": 44031,
+      "mae_bp": 32.03785799648693,
+      "rmse_bp": 47.3200829658095
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Black or African American",
+      "n": 31287,
+      "mae_bp": 39.81676227338953,
+      "rmse_bp": 60.83334365350884
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Free Form Text Only",
+      "n": 41,
+      "mae_bp": 35.93264138364211,
+      "rmse_bp": 48.46305065205997
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Joint",
+      "n": 11498,
+      "mae_bp": 31.254220941548176,
+      "rmse_bp": 45.492531257270194
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Native Hawaiian or Other Pacific Islander",
+      "n": 595,
+      "mae_bp": 32.86627178036815,
+      "rmse_bp": 53.48110871804382
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "Race Not Available",
+      "n": 73715,
+      "mae_bp": 31.397901399252543,
+      "rmse_bp": 47.31575091040959
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_race",
+      "group": "White",
+      "n": 275638,
+      "mae_bp": 32.89383470906236,
+      "rmse_bp": 50.78370803520621
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Female",
+      "n": 103537,
+      "mae_bp": 33.46740045015874,
+      "rmse_bp": 51.52778207918078
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Joint",
+      "n": 166148,
+      "mae_bp": 32.23057635186586,
+      "rmse_bp": 47.519197650656565
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Male",
+      "n": 133494,
+      "mae_bp": 34.165874169226406,
+      "rmse_bp": 54.39094264589946
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_sex",
+      "group": "Sex Not Available",
+      "n": 35684,
+      "mae_bp": 31.13137921715923,
+      "rmse_bp": 46.542518596559944
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Ethnicity Not Available",
+      "n": 71771,
+      "mae_bp": 31.052217505381495,
+      "rmse_bp": 46.607832046498814
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Free Form Text Only",
+      "n": 131,
+      "mae_bp": 41.758994632622674,
+      "rmse_bp": 58.984917945924096
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Hispanic or Latino",
+      "n": 25039,
+      "mae_bp": 44.027231321116425,
+      "rmse_bp": 78.87205102532371
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Joint",
+      "n": 8791,
+      "mae_bp": 31.662925236395196,
+      "rmse_bp": 46.34465459919054
+    },
+    {
+      "scenario": "race_balanced",
+      "model": "xgboost",
+      "dimension": "derived_ethnicity",
+      "group": "Not Hispanic or Latino",
+      "n": 333131,
+      "mae_bp": 32.65119616838877,
+      "rmse_bp": 48.737283335701434
+    }
+  ],
+  "temporal_2025": {
+    "linear": {
+      "n": 66655,
+      "mae_bp": 39.31439792205186,
+      "rmse_bp": 57.57818641459723
+    },
+    "xgboost": {
+      "n": 66655,
+      "mae_bp": 38.87470989248325,
+      "rmse_bp": 56.987484470935236
+    }
+  }
+}

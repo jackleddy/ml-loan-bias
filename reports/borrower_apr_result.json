@@ -1,0 +1,15 @@
+{
+  "model": "xgboost",
+  "year": 2024,
+  "predicted_rate_spread": 0.17891322076320648,
+  "spread_unit": "percentage_points",
+  "warnings": [],
+  "spread_source": "apr_minus_fixed30_apor",
+  "apor": 6.94,
+  "apor_effective_date": "2024-06-10",
+  "interpretation": "Historical pricing comparison, not proof of discrimination or a guaranteed fair price. Residual percentiles are descriptive, not calibrated probabilities.",
+  "actual_rate_spread": 0.3099999999999996,
+  "residual_bp": 13.108677923679313,
+  "historical_residual_percentile": 64.26359805924413,
+  "comparison_loans": 62656
+}

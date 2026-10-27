@@ -1,0 +1,239 @@
+scenario,model,dimension,group,n,mae_bp,rmse_bp
+primary,linear,overall,All,438863,34.33757379878457,52.57490149594112
+primary,linear,activity_year,2021,205270,25.0553743344768,38.45756966251875
+primary,linear,activity_year,2022,96815,41.8567418591121,59.84320932061177
+primary,linear,activity_year,2023,7467,61.20989704418586,85.29653699200506
+primary,linear,activity_year,2024,62656,45.64047569346874,68.27717392670003
+primary,linear,activity_year,2025,66655,38.36635737827755,56.97207371713332
+primary,linear,derived_race,2 or more minority races,872,36.0459419988942,49.9098983306842
+primary,linear,derived_race,American Indian or Alaska Native,1186,39.03593148099724,63.824875194172925
+primary,linear,derived_race,Asian,44031,33.77161507022486,49.21927436306293
+primary,linear,derived_race,Black or African American,31287,42.324335065261764,65.08887222848774
+primary,linear,derived_race,Free Form Text Only,41,38.50521007718986,51.6889249368645
+primary,linear,derived_race,Joint,11498,32.70952202823426,47.53146329708376
+primary,linear,derived_race,Native Hawaiian or Other Pacific Islander,595,34.50984532550158,55.42979152495688
+primary,linear,derived_race,Race Not Available,73715,32.54258129937664,49.073139693801025
+primary,linear,derived_race,White,275638,34.04276617595017,52.55837839732762
+primary,linear,derived_sex,Female,103537,35.15662948250731,54.233778360154886
+primary,linear,derived_sex,Joint,166148,33.33912922156473,49.271847894299384
+primary,linear,derived_sex,Male,133494,35.54832637215999,56.28260573582949
+primary,linear,derived_sex,Sex Not Available,35684,32.08050612868432,48.02549193330529
+primary,linear,derived_ethnicity,Ethnicity Not Available,71771,32.123468917509534,48.36211728509346
+primary,linear,derived_ethnicity,Free Form Text Only,131,43.958635769264696,61.897377403143985
+primary,linear,derived_ethnicity,Hispanic or Latino,25039,44.87731710895196,79.41128734215084
+primary,linear,derived_ethnicity,Joint,8791,32.966077937186775,48.23953983475852
+primary,linear,derived_ethnicity,Not Hispanic or Latino,333131,34.05480320611047,50.996256877588394
+primary,xgboost,overall,All,438863,32.88459503639907,50.45669430640366
+primary,xgboost,activity_year,2021,205270,24.0113570514211,36.81224429083484
+primary,xgboost,activity_year,2022,96815,40.323294147830104,57.84188243722458
+primary,xgboost,activity_year,2023,7467,58.83635209091796,81.87817277682534
+primary,xgboost,activity_year,2024,62656,43.384881472254996,65.06172547232545
+primary,xgboost,activity_year,2025,66655,36.628413052334174,54.76688968641689
+primary,xgboost,derived_race,2 or more minority races,872,34.48497897978358,47.8766601252481
+primary,xgboost,derived_race,American Indian or Alaska Native,1186,36.90292774843265,61.19878821105779
+primary,xgboost,derived_race,Asian,44031,32.13588006164838,47.36584759222015
+primary,xgboost,derived_race,Black or African American,31287,40.03257236590333,61.537765219553464
+primary,xgboost,derived_race,Free Form Text Only,41,35.63900604329822,48.138012790043774
+primary,xgboost,derived_race,Joint,11498,31.231957515052578,45.525394188209475
+primary,xgboost,derived_race,Native Hawaiian or Other Pacific Islander,595,32.96577525365164,53.83123446592178
+primary,xgboost,derived_race,Race Not Available,73715,31.26759711460407,47.2266555732616
+primary,xgboost,derived_race,White,275638,32.6712877997153,50.520817267167516
+primary,xgboost,derived_sex,Female,103537,33.36186627030036,51.52487643044509
+primary,xgboost,derived_sex,Joint,166148,32.086035021366314,47.3751306009441
+primary,xgboost,derived_sex,Male,133494,34.01516346545016,54.23074358684973
+primary,xgboost,derived_sex,Sex Not Available,35684,30.988501990929944,46.42677105840673
+primary,xgboost,derived_ethnicity,Ethnicity Not Available,71771,30.918625270847578,46.51766065105683
+primary,xgboost,derived_ethnicity,Free Form Text Only,131,42.10119096350039,58.59804397599759
+primary,xgboost,derived_ethnicity,Hispanic or Latino,25039,43.651532645702716,78.45689703881588
+primary,xgboost,derived_ethnicity,Joint,8791,31.538715643505643,46.2587838779463
+primary,xgboost,derived_ethnicity,Not Hispanic or Latino,333131,32.53077181646613,48.65420551721101
+without_2023,linear,overall,All,431396,33.86528374365738,51.826542124052175
+without_2023,linear,activity_year,2021,205270,25.050350325687937,38.46243650657677
+without_2023,linear,activity_year,2022,96815,41.833111796827644,59.80700886295146
+without_2023,linear,activity_year,2024,62656,45.64415213648738,68.30850186939361
+without_2023,linear,activity_year,2025,66655,38.36636140801489,56.97944413962532
+without_2023,linear,derived_race,2 or more minority races,858,35.72994498024656,49.36793523048297
+without_2023,linear,derived_race,American Indian or Alaska Native,1166,38.8495391023531,63.86091354304744
+without_2023,linear,derived_race,Asian,43184,33.424911223368646,48.63374382710457
+without_2023,linear,derived_race,Black or African American,30670,41.77840287091152,64.24820152564523
+without_2023,linear,derived_race,Free Form Text Only,41,38.57172165370366,51.779354406209286
+without_2023,linear,derived_race,Joint,11262,32.331588767905586,47.00426515979388
+without_2023,linear,derived_race,Native Hawaiian or Other Pacific Islander,588,34.4237589422174,55.523052512218094
+without_2023,linear,derived_race,Race Not Available,72742,32.25485539132831,48.60823243886728
+without_2023,linear,derived_race,White,270885,33.50648597650527,51.71483102470184
+without_2023,linear,derived_sex,Female,101792,34.67401376794134,53.450287440030586
+without_2023,linear,derived_sex,Joint,162933,32.798402778233275,48.43777306772603
+without_2023,linear,derived_sex,Male,131444,35.1226706929005,55.585070230379294
+without_2023,linear,derived_sex,Sex Not Available,35227,31.7712053251493,47.50980985591596
+without_2023,linear,derived_ethnicity,Ethnicity Not Available,70849,31.82380218815576,47.955420393800786
+without_2023,linear,derived_ethnicity,Free Form Text Only,130,44.238652292087856,62.136696561465534
+without_2023,linear,derived_ethnicity,Hispanic or Latino,24596,44.49449590596865,78.92390102516816
+without_2023,linear,derived_ethnicity,Joint,8632,32.58584088916759,47.70571939087037
+without_2023,linear,derived_ethnicity,Not Hispanic or Latino,327189,33.53793911162569,50.13628069970576
+without_2023,xgboost,overall,All,431396,32.41859085877128,49.712392149910414
+without_2023,xgboost,activity_year,2021,205270,24.002152175222747,36.79336022533483
+without_2023,xgboost,activity_year,2022,96815,40.29414947292941,57.80689011220193
+without_2023,xgboost,activity_year,2024,62656,43.347675333176824,65.02462559647742
+without_2023,xgboost,activity_year,2025,66655,36.625288698602276,54.748433248243934
+without_2023,xgboost,derived_race,2 or more minority races,858,34.10189073115429,47.37670960409318
+without_2023,xgboost,derived_race,American Indian or Alaska Native,1166,36.730944684891305,61.29112955851789
+without_2023,xgboost,derived_race,Asian,43184,31.785025213195205,46.747586892061435
+without_2023,xgboost,derived_race,Black or African American,30670,39.48716917969454,60.70216717017479
+without_2023,xgboost,derived_race,Free Form Text Only,41,35.79256853573933,48.373211744468676
+without_2023,xgboost,derived_race,Joint,11262,30.89845026161851,45.12473718322637
+without_2023,xgboost,derived_race,Native Hawaiian or Other Pacific Islander,588,32.69425629292241,53.73441026442991
+without_2023,xgboost,derived_race,Race Not Available,72742,30.990058173503332,46.767937131567145
+without_2023,xgboost,derived_race,White,270885,32.141085088872394,49.681018060970764
+without_2023,xgboost,derived_sex,Female,101792,32.88645672446926,50.73121450615359
+without_2023,xgboost,derived_sex,Joint,162933,31.553071067528744,46.56181567260557
+without_2023,xgboost,derived_sex,Male,131444,33.59240622481936,53.52445400981747
+without_2023,xgboost,derived_sex,Sex Not Available,35227,30.68996642213373,45.93567588088231
+without_2023,xgboost,derived_ethnicity,Ethnicity Not Available,70849,30.625648249551496,46.12299663515121
+without_2023,xgboost,derived_ethnicity,Free Form Text Only,130,42.742536227517405,59.50621131034758
+without_2023,xgboost,derived_ethnicity,Hispanic or Latino,24596,43.23667339952107,77.89246187994928
+without_2023,xgboost,derived_ethnicity,Joint,8632,31.178979926073012,45.69810771297918
+without_2023,xgboost,derived_ethnicity,Not Hispanic or Latino,327189,32.02219868611708,47.803459424576964
+without_geography,linear,overall,All,438863,34.375838643092784,52.61225598053095
+without_geography,linear,activity_year,2021,205270,25.05483987551657,38.48095440661983
+without_geography,linear,activity_year,2022,96815,41.91035761248184,59.89970361635293
+without_geography,linear,activity_year,2023,7467,61.218350412507185,85.24032722177247
+without_geography,linear,activity_year,2024,62656,45.729817593000696,68.3031389726913
+without_geography,linear,activity_year,2025,66655,38.45713820848652,57.04438025656974
+without_geography,linear,derived_race,2 or more minority races,872,36.15518069132246,50.03379393779343
+without_geography,linear,derived_race,American Indian or Alaska Native,1186,39.126032791257295,63.86430129758413
+without_geography,linear,derived_race,Asian,44031,34.01041086821835,49.372622724509
+without_geography,linear,derived_race,Black or African American,31287,42.41028620865458,65.17396730072676
+without_geography,linear,derived_race,Free Form Text Only,41,38.69557994507433,51.61662419125276
+without_geography,linear,derived_race,Joint,11498,32.77164281460628,47.5884151459858
+without_geography,linear,derived_race,Native Hawaiian or Other Pacific Islander,595,34.57058811173532,55.51877289810796
+without_geography,linear,derived_race,Race Not Available,73715,32.59758706447194,49.12932286958602
+without_geography,linear,derived_race,White,275638,34.03759408418847,52.56598959271774
+without_geography,linear,derived_sex,Female,103537,35.2625448163305,54.30595279241525
+without_geography,linear,derived_sex,Joint,166148,33.32298230816262,49.29065126431726
+without_geography,linear,derived_sex,Male,133494,35.602965996203714,56.314112573719974
+without_geography,linear,derived_sex,Sex Not Available,35684,32.1145713636754,48.06392931073909
+without_geography,linear,derived_ethnicity,Ethnicity Not Available,71771,32.164542456077406,48.40628209444269
+without_geography,linear,derived_ethnicity,Free Form Text Only,131,44.19442446267446,62.147868496624284
+without_geography,linear,derived_ethnicity,Hispanic or Latino,25039,44.91424805847374,79.33484683388257
+without_geography,linear,derived_ethnicity,Joint,8791,32.96918744338332,48.26924886812737
+without_geography,linear,derived_ethnicity,Not Hispanic or Latino,333131,34.09341323459233,51.0460375587291
+without_geography,xgboost,overall,All,438863,33.097200238987085,50.68315305119195
+without_geography,xgboost,activity_year,2021,205270,24.17092193762579,37.031009815166364
+without_geography,xgboost,activity_year,2022,96815,40.54646330862665,58.0691115160309
+without_geography,xgboost,activity_year,2023,7467,59.00213360182912,82.10140346771773
+without_geography,xgboost,activity_year,2024,62656,43.66171480537539,65.27818097844553
+without_geography,xgboost,activity_year,2025,66655,36.933887370354746,55.059866153215964
+without_geography,xgboost,derived_race,2 or more minority races,872,34.62851150973034,48.10160221822814
+without_geography,xgboost,derived_race,American Indian or Alaska Native,1186,37.01387928154809,61.24785927328899
+without_geography,xgboost,derived_race,Asian,44031,32.63717658593663,47.65930721404772
+without_geography,xgboost,derived_race,Black or African American,31287,40.269930509452216,61.837282724085526
+without_geography,xgboost,derived_race,Free Form Text Only,41,35.47920419842732,47.38598184652452
+without_geography,xgboost,derived_race,Joint,11498,31.471249309355535,45.77161308881748
+without_geography,xgboost,derived_race,Native Hawaiian or Other Pacific Islander,595,32.937686682172746,53.98567420627123
+without_geography,xgboost,derived_race,Race Not Available,73715,31.45888834688427,47.43324046807996
+without_geography,xgboost,derived_race,White,275638,32.84078493355781,50.733462325487665
+without_geography,xgboost,derived_sex,Female,103537,33.67679120364017,51.82818863205596
+without_geography,xgboost,derived_sex,Joint,166148,32.20549775214098,47.54256072754715
+without_geography,xgboost,derived_sex,Male,133494,34.27154140752057,54.469830702410285
+without_geography,xgboost,derived_sex,Sex Not Available,35684,31.174152798257637,46.63641977800162
+without_geography,xgboost,derived_ethnicity,Ethnicity Not Available,71771,31.08703257810786,46.70760591143257
+without_geography,xgboost,derived_ethnicity,Free Form Text Only,131,42.365536818916254,58.97601342350388
+without_geography,xgboost,derived_ethnicity,Hispanic or Latino,25039,43.79418273374826,78.44497698897574
+without_geography,xgboost,derived_ethnicity,Joint,8791,31.65712686036158,46.356765358497455
+without_geography,xgboost,derived_ethnicity,Not Hispanic or Latino,333131,32.760622530764685,48.92314181014914
+including_outliers,linear,overall,All,438865,35.03822654647144,461.69263787352514
+including_outliers,linear,activity_year,2021,205271,26.464782778088303,671.4265275258065
+including_outliers,linear,activity_year,2022,96815,41.88943026241005,59.86670119629546
+including_outliers,linear,activity_year,2023,7467,61.25226145271301,85.32408425220798
+including_outliers,linear,activity_year,2024,62657,45.84128293160517,79.06199025618437
+including_outliers,linear,activity_year,2025,66655,38.39810630722379,56.99766529018091
+including_outliers,linear,derived_race,2 or more minority races,872,36.18027898216929,50.12352680377947
+including_outliers,linear,derived_race,American Indian or Alaska Native,1186,38.98201193349213,63.87969699267374
+including_outliers,linear,derived_race,Asian,44031,33.560963815125646,49.13521362268705
+including_outliers,linear,derived_race,Black or African American,31287,42.371615931275386,65.14996879438746
+including_outliers,linear,derived_race,Free Form Text Only,41,37.97807592090079,51.70429399930715
+including_outliers,linear,derived_race,Joint,11498,32.71899041479715,47.59488473202767
+including_outliers,linear,derived_race,Native Hawaiian or Other Pacific Islander,595,34.565921528898,55.50804205863907
+including_outliers,linear,derived_race,Race Not Available,73715,32.48775661057097,49.08995362774732
+including_outliers,linear,derived_race,White,275640,35.20063896294434,581.1605467275333
+including_outliers,linear,derived_sex,Female,103537,35.12754469118642,54.26108421553993
+including_outliers,linear,derived_sex,Joint,166149,33.42464972023992,55.07803764441731
+including_outliers,linear,derived_sex,Male,133495,37.78283542200588,833.119586461486
+including_outliers,linear,derived_sex,Sex Not Available,35684,32.02440751028477,48.03183527159983
+including_outliers,linear,derived_ethnicity,Ethnicity Not Available,71771,32.0722120287222,48.38660388779285
+including_outliers,linear,derived_ethnicity,Free Form Text Only,131,44.04234807799921,61.787396519438566
+including_outliers,linear,derived_ethnicity,Hispanic or Latino,25039,44.92689332425239,79.52677830815492
+including_outliers,linear,derived_ethnicity,Joint,8791,32.96893313809859,48.30530705988391
+including_outliers,linear,derived_ethnicity,Not Hispanic or Latino,333133,34.98504394053597,528.9342417037482
+including_outliers,xgboost,overall,All,438865,37.53697958480707,476.89374194745807
+including_outliers,xgboost,activity_year,2021,205271,29.421032259863107,682.7672082895072
+including_outliers,xgboost,activity_year,2022,96815,44.1758298102763,130.69502936949192
+including_outliers,xgboost,activity_year,2023,7467,61.07489293462953,99.80850395475196
+including_outliers,xgboost,activity_year,2024,62657,47.7173232704219,146.38039019121604
+including_outliers,xgboost,activity_year,2025,66655,40.681544065597386,125.38841621409271
+including_outliers,xgboost,derived_race,2 or more minority races,872,36.52427046190097,61.559219422296806
+including_outliers,xgboost,derived_race,American Indian or Alaska Native,1186,43.572889768237886,198.7230558745587
+including_outliers,xgboost,derived_race,Asian,44031,40.7561646603951,179.39548076217454
+including_outliers,xgboost,derived_race,Black or African American,31287,42.58050956901294,92.12077620148742
+including_outliers,xgboost,derived_race,Free Form Text Only,41,36.0992253561209,49.167100683355386
+including_outliers,xgboost,derived_race,Joint,11498,34.18285924965134,68.35582484970308
+including_outliers,xgboost,derived_race,Native Hawaiian or Other Pacific Islander,595,51.35126689247722,384.2997115953737
+including_outliers,xgboost,derived_race,Race Not Available,73715,35.332235791450955,118.98921569231777
+including_outliers,xgboost,derived_race,White,275640,37.12742887923001,592.8881163422069
+including_outliers,xgboost,derived_sex,Female,103537,36.90958441740194,126.35663284402196
+including_outliers,xgboost,derived_sex,Joint,166149,35.470521212800904,111.7673790548435
+including_outliers,xgboost,derived_sex,Male,133495,41.34329022449652,846.7878363056641
+including_outliers,xgboost,derived_sex,Sex Not Available,35684,34.73951199857057,100.28738440617602
+including_outliers,xgboost,derived_ethnicity,Ethnicity Not Available,71771,34.99933106117241,118.99567860748664
+including_outliers,xgboost,derived_ethnicity,Free Form Text Only,131,42.8033552062874,59.29833849726741
+including_outliers,xgboost,derived_ethnicity,Hispanic or Latino,25039,47.86323868995272,149.31933954240895
+including_outliers,xgboost,derived_ethnicity,Joint,8791,37.82968888035829,179.22887348506057
+including_outliers,xgboost,derived_ethnicity,Not Hispanic or Latino,333133,37.29775761590108,542.2495679504103
+race_balanced,linear,overall,All,438863,34.370170811800406,52.609014360769045
+race_balanced,linear,activity_year,2021,205270,25.196912960649943,38.51235031257654
+race_balanced,linear,activity_year,2022,96815,41.89905483936087,59.8987568007989
+race_balanced,linear,activity_year,2023,7467,61.061266562454705,85.39132805671808
+race_balanced,linear,activity_year,2024,62656,45.4366081518323,68.3150672533331
+race_balanced,linear,activity_year,2025,66655,38.291926449490255,56.9220333630473
+race_balanced,linear,derived_race,2 or more minority races,872,35.79138538771657,49.63614219961039
+race_balanced,linear,derived_race,American Indian or Alaska Native,1186,39.038372145368136,63.81214489466519
+race_balanced,linear,derived_race,Asian,44031,33.67883249712078,49.19801167769133
+race_balanced,linear,derived_race,Black or African American,31287,42.243797662332746,64.97415408962848
+race_balanced,linear,derived_race,Free Form Text Only,41,38.33820976595065,51.55789363609815
+race_balanced,linear,derived_race,Joint,11498,32.73534542488047,47.5197895003035
+race_balanced,linear,derived_race,Native Hawaiian or Other Pacific Islander,595,34.476452417400424,55.28119593333381
+race_balanced,linear,derived_race,Race Not Available,73715,32.57699273028665,49.10691939161312
+race_balanced,linear,derived_race,White,275638,34.10924084421388,52.625222079937984
+race_balanced,linear,derived_sex,Female,103537,35.10982215786549,54.21312012942893
+race_balanced,linear,derived_sex,Joint,166148,33.42966479518859,49.32644787210635
+race_balanced,linear,derived_sex,Male,133494,35.56283479678037,56.32899995227808
+race_balanced,linear,derived_sex,Sex Not Available,35684,32.14139674554001,48.08810826862719
+race_balanced,linear,derived_ethnicity,Ethnicity Not Available,71771,32.16651650400188,48.40848350900906
+race_balanced,linear,derived_ethnicity,Free Form Text Only,131,43.62387056357307,62.02378978687059
+race_balanced,linear,derived_ethnicity,Hispanic or Latino,25039,44.92469016069208,79.5449982207764
+race_balanced,linear,derived_ethnicity,Joint,8791,32.984080503222565,48.19329523691099
+race_balanced,linear,derived_ethnicity,Not Hispanic or Latino,333131,34.08456769645941,51.01855054479153
+race_balanced,xgboost,overall,All,438863,33.02167506135107,50.56967898082818
+race_balanced,xgboost,activity_year,2021,205270,24.21000643661668,36.94608637939425
+race_balanced,xgboost,activity_year,2022,96815,40.44825073386259,57.9613022242811
+race_balanced,xgboost,activity_year,2023,7467,58.88350189072147,81.89713790184774
+race_balanced,xgboost,activity_year,2024,62656,43.43784612319494,65.19808866183406
+race_balanced,xgboost,activity_year,2025,66655,36.68263702788362,54.83641855608643
+race_balanced,xgboost,derived_race,2 or more minority races,872,34.18538969987768,47.51112788271871
+race_balanced,xgboost,derived_race,American Indian or Alaska Native,1186,37.18291767804913,61.34520508108825
+race_balanced,xgboost,derived_race,Asian,44031,32.03785799648693,47.3200829658095
+race_balanced,xgboost,derived_race,Black or African American,31287,39.81676227338953,60.83334365350884
+race_balanced,xgboost,derived_race,Free Form Text Only,41,35.93264138364211,48.46305065205997
+race_balanced,xgboost,derived_race,Joint,11498,31.254220941548176,45.492531257270194
+race_balanced,xgboost,derived_race,Native Hawaiian or Other Pacific Islander,595,32.86627178036815,53.48110871804382
+race_balanced,xgboost,derived_race,Race Not Available,73715,31.397901399252543,47.31575091040959
+race_balanced,xgboost,derived_race,White,275638,32.89383470906236,50.78370803520621
+race_balanced,xgboost,derived_sex,Female,103537,33.46740045015874,51.52778207918078
+race_balanced,xgboost,derived_sex,Joint,166148,32.23057635186586,47.519197650656565
+race_balanced,xgboost,derived_sex,Male,133494,34.165874169226406,54.39094264589946
+race_balanced,xgboost,derived_sex,Sex Not Available,35684,31.13137921715923,46.542518596559944
+race_balanced,xgboost,derived_ethnicity,Ethnicity Not Available,71771,31.052217505381495,46.607832046498814
+race_balanced,xgboost,derived_ethnicity,Free Form Text Only,131,41.758994632622674,58.984917945924096
+race_balanced,xgboost,derived_ethnicity,Hispanic or Latino,25039,44.027231321116425,78.87205102532371
+race_balanced,xgboost,derived_ethnicity,Joint,8791,31.662925236395196,46.34465459919054
+race_balanced,xgboost,derived_ethnicity,Not Hispanic or Latino,333131,32.65119616838877,48.737283335701434

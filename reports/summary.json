@@ -1,0 +1,33 @@
+{
+  "selected_model": "xgboost",
+  "primary_rows": 438863,
+  "exploratory_eligible_comparisons": 58,
+  "model_direction_disagreements": 5,
+  "area_correlations": [
+    {
+      "model": "linear",
+      "field": "tract_minority_population_percent",
+      "n": 438863,
+      "spearman_rho": -0.01296900137380634
+    },
+    {
+      "model": "linear",
+      "field": "tract_to_msa_income_percentage",
+      "n": 438863,
+      "spearman_rho": 0.002129185668888607
+    },
+    {
+      "model": "xgboost",
+      "field": "tract_minority_population_percent",
+      "n": 438863,
+      "spearman_rho": 0.0004395583251019857
+    },
+    {
+      "model": "xgboost",
+      "field": "tract_to_msa_income_percentage",
+      "n": 438863,
+      "spearman_rho": -0.009285945781641302
+    }
+  ],
+  "inference_note": "Bootstrap conditions on fitted cross-validation models; Welch tests ignore lender clustering. Neither inference method establishes causality. Cross-validation model selection adds uncertainty not captured here."
+}

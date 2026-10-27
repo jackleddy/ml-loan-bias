@@ -1,0 +1,22 @@
+{
+  "tracts_2017.zip": {
+    "url": "https://www2.census.gov/geo/tiger/TIGER2017/TRACT/tl_2017_51_tract.zip",
+    "sha256": "d9be8fd15f011a56e4409088e93f36f52d52ac7e57beb6638e940df559d19673",
+    "retrieved_at_utc": "2026-10-15T21:08:42.147658+00:00"
+  },
+  "tracts_2020.zip": {
+    "url": "https://www2.census.gov/geo/tiger/TIGER2020/TRACT/tl_2020_51_tract.zip",
+    "sha256": "9f78de13dd82187e8b09a6ebadf26e8c61b7583d0445edc5dea1ee3b625cac10",
+    "retrieved_at_utc": "2026-10-15T21:08:42.772870+00:00"
+  },
+  "apor_fixed.txt": {
+    "url": "https://files.ffiec.cfpb.gov/apor/YieldTableFixed.txt",
+    "sha256": "4cb2d8db005e97771c673ed98b909a4818075b6dd741c54f30d49d77b5985c96",
+    "retrieved_at_utc": "2026-10-15T21:08:43.203450+00:00"
+  },
+  "apor_adjustable.txt": {
+    "url": "https://files.ffiec.cfpb.gov/apor/YieldTableAdjustable.txt",
+    "sha256": "6c39ebee8a1ae573905dec18dac2b4fb5958029791c17c9006f51b275c51eb55",
+    "retrieved_at_utc": "2026-10-15T21:08:43.528973+00:00"
+  }
+}

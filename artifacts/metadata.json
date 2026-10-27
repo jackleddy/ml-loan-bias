@@ -1,0 +1,209 @@
+{
+  "selected_model": "xgboost",
+  "selection": [
+    {
+      "scenario": "primary",
+      "model": "xgboost",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 32.88459503639907,
+      "rmse_bp": 50.45669430640366
+    },
+    {
+      "scenario": "primary",
+      "model": "linear",
+      "dimension": "overall",
+      "group": "All",
+      "n": 438863,
+      "mae_bp": 34.33757379878457,
+      "rmse_bp": 52.57490149594112
+    }
+  ],
+  "temporal_2025": {
+    "linear": {
+      "n": 66655,
+      "mae_bp": 39.31439792205186,
+      "rmse_bp": 57.57818641459723
+    },
+    "xgboost": {
+      "n": 66655,
+      "mae_bp": 38.87470989248325,
+      "rmse_bp": 56.987484470935236
+    }
+  },
+  "raw_features": [
+    "activity_year",
+    "loan_amount",
+    "income",
+    "combined_loan_to_value_ratio",
+    "debt_to_income_ratio",
+    "conforming_loan_limit",
+    "latitude",
+    "longitude"
+  ],
+  "target": "rate_spread",
+  "target_unit": "percentage_points",
+  "residual_unit": "basis_points",
+  "income_input_unit": "thousands_of_dollars",
+  "supported_years": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "ranges": {
+    "loan_amount": {
+      "min": 5000.0,
+      "max": 12005000.0
+    },
+    "income": {
+      "min": -5996.0,
+      "max": 23133.0
+    },
+    "combined_loan_to_value_ratio": {
+      "min": 1.51,
+      "max": 216.117
+    },
+    "latitude": {
+      "min": 36.5518081,
+      "max": 39.3451723
+    },
+    "longitude": {
+      "min": -83.4491365,
+      "max": -75.343752
+    }
+  },
+  "categories": {
+    "debt_to_income_ratio": [
+      "20%-<30%",
+      "30%-<36%",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49",
+      "50%-60%",
+      "<20%",
+      ">60%"
+    ],
+    "conforming_loan_limit": [
+      "C",
+      "NC"
+    ]
+  },
+  "config": {
+    "input": "D:\\ComputerEngineering\\ml-loan-bias\\totalVA_cleaned.csv.gz",
+    "reference_dir": "D:\\ComputerEngineering\\ml-loan-bias\\data\\reference",
+    "processed_dir": "D:\\ComputerEngineering\\ml-loan-bias\\data\\processed",
+    "artifact_dir": "D:\\ComputerEngineering\\ml-loan-bias\\artifacts",
+    "report_dir": "D:\\ComputerEngineering\\ml-loan-bias\\reports",
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "chunksize": 100000,
+    "seed": 4828,
+    "folds": 5,
+    "spread_min": -10.0,
+    "spread_max": 20.0,
+    "min_group_size": 100,
+    "min_lenders": 20,
+    "bootstrap_replicates": 1000,
+    "weight_cap": 10.0,
+    "n_jobs": 8,
+    "xgboost": {
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "min_child_weight": 10,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8
+    }
+  },
+  "completed_scenarios": [
+    "primary",
+    "without_2023",
+    "without_geography",
+    "including_outliers",
+    "race_balanced"
+  ],
+  "source_audit": {
+    "input": "D:\\ComputerEngineering\\ml-loan-bias\\totalVA_cleaned.csv.gz",
+    "input_sha256": "454348233d972c25d2e685d3d41ab45db30943244377c8ed7d9d156bcb8c2dcd",
+    "input_rows": 918502,
+    "cohort_rows_before_cleaning": 438865,
+    "primary_rows": 438863,
+    "eligible_including_outliers": 438865,
+    "exclusive_row_counts": {
+      "not_conventional_first_lien": 360415,
+      "included": 438863,
+      "not_360_month_term": 119222,
+      "target_outlier": 2
+    },
+    "primary_lenders_by_year": {
+      "2021": 695,
+      "2022": 684,
+      "2023": 91,
+      "2024": 601,
+      "2025": 592
+    },
+    "spread_bounds": [
+      -10.0,
+      20.0
+    ],
+    "processed_sha256": "70d2ef0e6e6eca473606443c882b0ee2ad9a38a06e4db9c3112bbed519ff08e3",
+    "references": {
+      "tracts_2017.zip": {
+        "url": "https://www2.census.gov/geo/tiger/TIGER2017/TRACT/tl_2017_51_tract.zip",
+        "sha256": "d9be8fd15f011a56e4409088e93f36f52d52ac7e57beb6638e940df559d19673",
+        "retrieved_at_utc": "2026-10-15T21:08:42.147658+00:00"
+      },
+      "tracts_2020.zip": {
+        "url": "https://www2.census.gov/geo/tiger/TIGER2020/TRACT/tl_2020_51_tract.zip",
+        "sha256": "9f78de13dd82187e8b09a6ebadf26e8c61b7583d0445edc5dea1ee3b625cac10",
+        "retrieved_at_utc": "2026-10-15T21:08:42.772870+00:00"
+      },
+      "apor_fixed.txt": {
+        "url": "https://files.ffiec.cfpb.gov/apor/YieldTableFixed.txt",
+        "sha256": "4cb2d8db005e97771c673ed98b909a4818075b6dd741c54f30d49d77b5985c96",
+        "retrieved_at_utc": "2026-10-15T21:08:43.203450+00:00"
+      },
+      "apor_adjustable.txt": {
+        "url": "https://files.ffiec.cfpb.gov/apor/YieldTableAdjustable.txt",
+        "sha256": "6c39ebee8a1ae573905dec18dac2b4fb5958029791c17c9006f51b275c51eb55",
+        "retrieved_at_utc": "2026-10-15T21:08:43.528973+00:00"
+      }
+    },
+    "limitations": [
+      "Prior cleaning exclusions cannot be reconstructed.",
+      "Occupancy, fixed-rate status, purpose, exactly one unit, credit score, and precise timing are unavailable.",
+      "Input coverage is not verified against the full HMDA population; 2023 is unusually sparse."
+    ]
+  },
+  "processed_sha256": "70d2ef0e6e6eca473606443c882b0ee2ad9a38a06e4db9c3112bbed519ff08e3",
+  "model_sha256": "af073fbf44ecc68535737f9ff7d43cb8935ea3ff06158673aa88e18d94af61f6",
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.2.0",
+    "pyarrow": "23.0.1",
+    "statsmodels": "0.15.0"
+  },
+  "temporal_note": "2025 is unseen in training; its one-hot year indicators are all zero. This is a separate extrapolation diagnostic.",
+  "prediction_note": "Comparison uses a final all-data fit and an out-of-fold residual distribution; percentiles are descriptive, not calibrated probabilities or intervals."
+}

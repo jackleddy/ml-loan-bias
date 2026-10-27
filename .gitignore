@@ -2,8 +2,4 @@
 __pycache__/
 .pytest_cache/
 *.egg-info/
-data/
-artifacts/
-reports/
-totalVA_cleaned.csv
 *.tmp
