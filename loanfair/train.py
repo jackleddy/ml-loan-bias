@@ -9,7 +9,7 @@ import joblib
 import numpy as np
 import pandas as pd
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import GroupKFold, StratifiedKFold
 from threadpoolctl import threadpool_limits
 
 from .common import fingerprint, log, write_json
@@ -50,6 +50,44 @@ def out_of_fold(data, model_name, config, geography=True, balanced=False):
     })
 
 
+def lender_heldout_predictions(data, model_name, config):
+    """Evaluate known lenders only when their LEI is absent from model training."""
+    known = data.loc[data.lei.ne("Lender Not Available")].copy().reset_index(drop=True)
+    n_folds = config["folds"]
+    if known.lei.nunique() < n_folds:
+        raise ValueError("Lender-held-out validation requires at least one known lender per fold.")
+    folds = np.full(len(known), -1, dtype=int)
+    predictions = np.full(len(known), np.nan)
+    splitter = GroupKFold(n_splits=n_folds)
+    for fold, (training_idx, validation_idx) in enumerate(
+        splitter.split(known, known.rate_spread, groups=known.lei)
+    ):
+        training, validation = known.iloc[training_idx], known.iloc[validation_idx]
+        if set(training.lei).intersection(validation.lei):
+            raise ValueError("Lender leakage detected in held-out validation.")
+        model = make_model(model_name, config)
+        with threadpool_limits(limits=config["n_jobs"]):
+            model.fit(training, training.rate_spread)
+            predictions[validation_idx] = model.predict(validation)
+        folds[validation_idx] = fold
+        log(
+            f"  {model_name}: lender-held-out fold {fold + 1}/{n_folds} "
+            f"({training.lei.nunique():,} training lenders, "
+            f"{validation.lei.nunique():,} held-out lenders)"
+        )
+    if not np.isfinite(predictions).all() or (folds < 0).any():
+        raise ValueError("Lender-held-out prediction coverage is incomplete.")
+    return pd.DataFrame({
+        "row_id": known.row_id.to_numpy(),
+        "activity_year": known.activity_year.astype(int).to_numpy(),
+        "lei": known.lei.to_numpy(),
+        "fold": folds,
+        "actual_spread": known.rate_spread.to_numpy(),
+        "predicted_spread": predictions,
+        "residual_bp": (known.rate_spread.to_numpy() - predictions) * 100,
+    })
+
+
 def error_metrics(actual, predicted):
     return {"n": len(actual), "mae_bp": float(mean_absolute_error(actual, predicted) * 100), "rmse_bp": float(np.sqrt(mean_squared_error(actual, predicted)) * 100)}
 
@@ -75,7 +113,7 @@ def train(config, scenarios=None):
     if audit["processed_sha256"] != fingerprint(processed / "loans.parquet"):
         raise ValueError("Processed data fingerprint differs from preparation audit; rerun preparation.")
     metrics, primary_predictions = [], {}
-    temporal_metrics = {}
+    temporal_metrics, lender_heldout_metrics = {}, {}
     for scenario in scenarios:
         data = pd.read_parquet(processed / "eligible_including_outliers.parquet") if scenario == "including_outliers" else primary
         if scenario == "without_2023":
@@ -88,6 +126,24 @@ def train(config, scenarios=None):
             pd.DataFrame(metrics).to_csv(output / "model_metrics.csv", index=False)
             if scenario == "primary":
                 primary_predictions[name] = predictions
+                grouped_predictions = lender_heldout_predictions(primary, name, config)
+                grouped_predictions.to_parquet(
+                    output / f"predictions_lender_heldout_{name}.parquet", index=False
+                )
+                lender_heldout_metrics[name] = error_metrics(
+                    grouped_predictions.actual_spread,
+                    grouped_predictions.predicted_spread,
+                )
+                lender_heldout_metrics[name]["known_lenders"] = int(
+                    grouped_predictions.lei.nunique()
+                )
+                lender_heldout_metrics[name]["excluded_unknown_lender_rows"] = int(
+                    primary.lei.eq("Lender Not Available").sum()
+                )
+                lender_heldout_metrics[name]["by_year"] = {
+                    str(year): error_metrics(group.actual_spread, group.predicted_spread)
+                    for year, group in grouped_predictions.groupby("activity_year")
+                }
     primary_metrics = pd.DataFrame(metrics).query("scenario == 'primary' and dimension == 'overall'").sort_values(["mae_bp", "rmse_bp", "model"])
     selected = primary_metrics.iloc[0].model
     history, future = primary[primary.activity_year.lt(2025)], primary[primary.activity_year.eq(2025)]
@@ -109,6 +165,7 @@ def train(config, scenarios=None):
     categories = {col: sorted(primary[col].astype(str).unique().tolist()) for col in ["debt_to_income_ratio", "conforming_loan_limit"]}
     metadata = {
         "selected_model": selected, "selection": primary_metrics.to_dict("records"), "temporal_2025": temporal_metrics,
+        "lender_heldout": lender_heldout_metrics,
         "raw_features": RAW_FEATURES, "target": "rate_spread", "target_unit": "percentage_points", "residual_unit": "basis_points",
         "income_input_unit": "thousands_of_dollars", "supported_years": sorted(primary.activity_year.astype(int).unique().tolist()),
         "ranges": ranges, "categories": categories, "config": config, "completed_scenarios": scenarios,
@@ -119,6 +176,6 @@ def train(config, scenarios=None):
         "prediction_note": "Comparison uses a final all-data fit and an out-of-fold residual distribution; percentiles are descriptive, not calibrated probabilities or intervals.",
     }
     write_json(output / "metadata.json", metadata)
-    write_json(output / "metrics.json", {"selected_model": selected, "cross_validation": metrics, "temporal_2025": temporal_metrics})
+    write_json(output / "metrics.json", {"selected_model": selected, "cross_validation": metrics, "temporal_2025": temporal_metrics, "lender_heldout": lender_heldout_metrics})
     log(f"Selected {selected}; saved model and out-of-fold residuals.")
     return metadata

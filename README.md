@@ -73,6 +73,8 @@ Preprocessing is fitted within each training fold. The linear model standardizes
 
 Five-fold splits are stratified by year with a fixed seed. Every research residual comes from a model that excluded that record. Selection uses overall cross-validated MAE, then RMSE; both models' demographic results remain available. The selected model is refitted on all primary loans for borrower comparisons.
 
+A separate five-fold lender-held-out diagnostic keeps every known lender LEI in a single fold, so its loans are predicted only by models that never trained on that lender. It reports overall and per-year MAE/RMSE for each model, excludes records without a usable LEI, and does not affect primary model selection. Its predictions are saved as `artifacts/predictions_lender_heldout_<model>.parquet`; GroupKFold balances folds by lender loan counts, so year coverage can vary between folds.
+
 A separate temporal diagnostic trains on 2021–2024 and evaluates on 2025. The unseen 2025 category has zero one-hot year indicators in that diagnostic; it evaluates extrapolation separately from the retrospective study.
 
 Sensitivity fits exclude 2023, exclude geography, include target outliers, or apply race-balanced training weights. Weights are calculated inside each training fold: equal total weight per reported known-race category before a cap of 10. Joint remains a separate reported category; unavailable/free-form race keeps weight 1. Evaluation populations keep their natural frequencies. Balancing does not establish fairness.
