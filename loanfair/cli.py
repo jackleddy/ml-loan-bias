@@ -18,6 +18,9 @@ def main(command):
     if command in {"train_models", "run_pipeline"}:
         from .train import SCENARIOS
         parser.add_argument("--scenarios", nargs="+", choices=SCENARIOS, default=SCENARIOS, help="Must include primary; default runs every sensitivity.")
+    if command == "ml_extensions":
+        from .ml_extensions import PARTS
+        parser.add_argument("--parts", nargs="+", choices=list(PARTS), default=list(PARTS), help="Extension studies to run; default runs all five.")
     if command == "compare_loan":
         parser.add_argument("record", type=Path, help="Borrower JSON input.")
         parser.add_argument("--output", type=Path, help="Also save the result as JSON.")
@@ -38,6 +41,9 @@ def main(command):
         if command in {"analyze_fairness", "run_pipeline"}:
             from .analysis import analyze
             analyze(config)
+        if command == "ml_extensions":
+            from .ml_extensions import run
+            run(config, args.parts)
         if command == "compare_loan":
             from .compare import compare
             result = compare(json.loads(args.record.read_text(encoding="utf-8")), config)

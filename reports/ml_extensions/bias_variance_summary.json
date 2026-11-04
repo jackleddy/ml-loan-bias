@@ -1,0 +1,35 @@
+{
+  "part": "bias_variance",
+  "title": "1. Bias-variance analysis and tuning",
+  "figures": {
+    "bias_variance_depth.png": "Training vs validation error as XGBoost trees get deeper",
+    "bias_variance_trees.png": "Training vs validation error as more XGBoost trees are added",
+    "bias_variance_learning_curve.png": "Error vs number of training loans for both models",
+    "bias_variance_ridge.png": "Ridge regression error vs penalty strength, small vs full training set"
+  },
+  "findings": {
+    "best_depth": 8,
+    "best_depth_validation_mae_bp": 32.66665207959568,
+    "main_study_depth": 4,
+    "main_study_depth_validation_mae_bp": 32.83267440354712,
+    "deepest_tree_train_minus_validation_gap_bp": 3.547442131834824,
+    "best_tree_count": 800,
+    "best_tree_count_validation_mae_bp": 32.756425363829,
+    "learning_curve_final_validation_mae_bp": {
+      "linear": 34.45776698818872,
+      "xgboost": 32.9210485923195
+    },
+    "learning_curve_final_validation_minus_training_bp": {
+      "linear": 0.195068488319599,
+      "xgboost": 0.30440431944368385
+    },
+    "ridge_best_alpha": {
+      "small": 100.0,
+      "full": 1000.0
+    },
+    "ridge_improvement_over_weakest_penalty_bp": {
+      "small": 2.387482828648075,
+      "full": 0.004801357078541457
+    }
+  }
+}

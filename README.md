@@ -1,6 +1,6 @@
 # Virginia Mortgage Pricing Analysis
 
-CS 4828, Fall 2026 — Jack Leddy, Thomas Henning, Yuzhuo Zhang.
+CS 4824, Fall 2026 — Jack Leddy, Thomas Henning, Yuzhuo Zhang.
 
 Predict historical **rate spread**, then compare actual-minus-predicted pricing across race, sex, ethnicity, intersections, lenders, years, and geographies. Ordinary linear regression is the baseline; XGBoost provides the nonlinear comparison. Demographics, lender identity, area demographics, and actual interest rate never enter the pricing models.
 
@@ -113,15 +113,34 @@ Optionally provide exactly one actual-pricing input mode:
 
 Without actual pricing, the CLI returns expected spread only. Otherwise it adds actual spread, residual basis points, and the residual percentile among that year's out-of-fold residuals. Percentiles compare an all-data fitted prediction with an out-of-fold historical reference: they are descriptive, not calibrated probabilities, intervals, or discrimination scores. Unsupported years fail; inputs outside training ranges generate warnings. Nominal interest rate is never substituted for APR or reconstructed from predicted spread.
 
+## Machine-learning extension studies
+
+Five optional studies extend the main analysis. They read the prepared loans (run `prepare_data.py` first) and write charts, tables, and an index page to `reports/ml_extensions/`. The index, `reports/ml_extensions/README.md`, lists every chart with the study that produced it. Each study's source file begins with a plain-language description and a list of its charts.
+
+| `--parts` name | Source | Question |
+|---|---|---|
+| `bias_variance` | `loanfair/bias_variance.py` | Is XGBoost too simple or too complex? Tree depth, tree count, learning curves, and Ridge regularization |
+| `high_priced` | `loanfair/high_priced.py` | Can logistic regression and an XGBoost classifier spot Regulation Z higher-priced loans, and do their mistakes fall evenly across groups? |
+| `proxy` | `loanfair/proxy_test.py` | Can the pricing inputs predict ethnicity or race, with and without location? |
+| `interpret` | `loanfair/interpretability.py` | SHAP values, partial dependence, and permutation importance |
+| `fairness` | `loanfair/fairness_tradeoff.py` | How much accuracy does a demographic-parity penalty on quoted prices cost? |
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_ml_extensions.py
+.\.venv\Scripts\python.exe scripts/run_ml_extensions.py --parts proxy fairness
+```
+
+A full run takes about 20 minutes on an 8-core laptop CPU (bias_variance is the slowest part); slower machines take longer. Study settings (depth grid, sample sizes, penalty strengths) have defaults in `loanfair/ml_shared.py` and can be overridden with an `ml_extensions` section in `config.json`. Ethnicity enters the fairness study only as a training penalty; no study adds demographics as a model input.
+
 ## Files and validation
 
 | Location | Contents |
 |---|---|
-| `loanfair/`, `scripts/` | Shared implementation and six executable commands |
+| `loanfair/`, `scripts/` | Shared implementation and seven executable commands |
 | `data/reference/` | Raw official downloads, normalized tables, source manifest |
 | `data/processed/` | Primary/outlier-inclusive Parquet, exclusions CSV, coverage CSV, audit JSON |
 | `artifacts/` | Fold predictions, metrics, temporal predictions, saved model, metadata |
-| `reports/` | `report.md`, tables, figures, machine-readable summary |
+| `reports/` | `report.md`, tables, figures, machine-readable summary; `ml_extensions/` holds the extension studies' outputs |
 | `examples/`, `tests/` | Borrower JSON examples and synthetic tests |
 
 Generated datasets, caches, models, and reports are ignored by Git. Stable `row_id` is the zero-based position in the source file. Every row receives one exclusive disposition. SHA-256 source/processed/model fingerprints, configuration, and dependency versions accompany outputs. Load joblib artifacts only from trusted sources. `cleaningData.R` is preserved as legacy work and is not invoked.

@@ -1,0 +1,52 @@
+{
+  "part": "high_priced",
+  "title": "3. High-priced loan classification",
+  "figures": {
+    "high_priced_roc.png": "ROC curves for spotting high-priced loans, both models",
+    "high_priced_precision_recall.png": "Precision-recall curves, both models",
+    "high_priced_confusion.png": "Confusion matrices (right and wrong answers), both models",
+    "high_priced_group_errors.png": "Missed rate and false alarm rate by race and ethnicity"
+  },
+  "findings": {
+    "high_priced_loans": 9373,
+    "high_priced_share": 0.02135746235157669,
+    "roc_auc": {
+      "linear": 0.7889765341065337,
+      "xgboost": 0.8505648509492763
+    },
+    "pr_auc": {
+      "linear": 0.13184588272895656,
+      "xgboost": 0.2376845498762996
+    },
+    "precision": {
+      "linear": 0.211865312667023,
+      "xgboost": 0.30342334679991495
+    },
+    "recall": {
+      "linear": 0.2114584444681532,
+      "xgboost": 0.3044916248799744
+    },
+    "xgboost_missed_rate_by_group": {
+      "Hispanic or Latino": 0.8814147018030514,
+      "Joint (ethnicity)": 0.6870748299319728,
+      "Not Hispanic or Latino": 0.6464737793851718,
+      "American Indian or Alaska Native": 0.7560975609756098,
+      "Asian": 0.8597359735973598,
+      "Black or African American": 0.6277602523659306,
+      "Joint (race)": 0.7361963190184049,
+      "White": 0.6801512909061009
+    },
+    "xgboost_actual_high_priced_rate_by_group": {
+      "Hispanic or Latino": 0.0575901593514118,
+      "Joint (ethnicity)": 0.016721647139119555,
+      "Not Hispanic or Latino": 0.019920091495537792,
+      "2 or more minority races": 0.017201834862385322,
+      "American Indian or Alaska Native": 0.03456998313659359,
+      "Asian": 0.01376303059208285,
+      "Black or African American": 0.04052801483044076,
+      "Joint (race)": 0.0141763785006088,
+      "Native Hawaiian or Other Pacific Islander": 0.02689075630252101,
+      "White": 0.022061544489511607
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "part": "fairness",
+  "title": "7. Fairness-accuracy tradeoff",
+  "figures": {
+    "fairness_tradeoff_curve.png": "Accuracy vs. average quoted price gap at each penalty strength (both models)",
+    "fairness_gaps_by_strength.png": "Quoted gap, unexplained gap, and overall error vs. penalty strength"
+  },
+  "findings": {
+    "linear": {
+      "no_rule": {
+        "mae_bp": 34.33757379878443,
+        "predicted_gap_bp": 3.7044637341288436,
+        "residual_gap_bp": 15.580128707591276
+      },
+      "strictest_rule": {
+        "strength": 100000.0,
+        "mae_bp": 34.566029010786586,
+        "predicted_gap_bp": 0.005164334080559607,
+        "residual_gap_bp": 19.27942810763956
+      },
+      "mae_cost_bp": 0.22845521200215302
+    },
+    "xgboost": {
+      "no_rule": {
+        "mae_bp": 32.82758116776857,
+        "predicted_gap_bp": 2.6529246563534863,
+        "residual_gap_bp": 16.631667785366634
+      },
+      "strictest_rule": {
+        "strength": 100000.0,
+        "mae_bp": 32.89791024908266,
+        "predicted_gap_bp": -0.0452503014073069,
+        "residual_gap_bp": 19.329842743127422
+      },
+      "mae_cost_bp": 0.07032908131409243
+    },
+    "actual_gap_bp": 19.284592441720118
+  }
+}

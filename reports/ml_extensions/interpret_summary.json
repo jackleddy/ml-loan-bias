@@ -1,0 +1,68 @@
+{
+  "part": "interpret",
+  "title": "5. Interpretability (what the model pays attention to)",
+  "figures": {
+    "interpret_shap_importance.png": "Average impact of each input on XGBoost predictions (SHAP)",
+    "interpret_shap_beeswarm.png": "Each loan's SHAP value per input, colored by the input's value",
+    "interpret_shap_by_ethnicity.png": "Average SHAP effect per input, Hispanic or Latino vs. non-Hispanic borrowers",
+    "interpret_partial_dependence.png": "Predicted price vs. loan-to-value, income, and loan amount (both models)",
+    "interpret_permutation_importance.png": "Error increase when each input is scrambled (both models)"
+  },
+  "findings": {
+    "explained_loans": 20000,
+    "shap_mean_abs_bp": {
+      "log_loan_amount": 14.676471710205078,
+      "combined_loan_to_value_ratio": 10.026809692382812,
+      "signed_log_income": 7.5021867752075195,
+      "debt_to_income_ratio": 5.665439605712891,
+      "activity_year": 4.355120658874512,
+      "latitude": 3.1947765350341797,
+      "longitude": 1.4235968589782715,
+      "conforming_loan_limit": 0.41948390007019043
+    },
+    "shap_mean_by_ethnicity_bp": {
+      "Hispanic or Latino": {
+        "conforming_loan_limit": 0.14362595975399017,
+        "longitude": -0.0630146786570549,
+        "latitude": -0.6780489087104797,
+        "activity_year": -0.6505069136619568,
+        "debt_to_income_ratio": 2.547431707382202,
+        "signed_log_income": -3.0861916542053223,
+        "combined_loan_to_value_ratio": 4.370283603668213,
+        "log_loan_amount": -0.89185631275177
+      },
+      "Not Hispanic or Latino": {
+        "conforming_loan_limit": 0.032668910920619965,
+        "longitude": 0.3591070771217346,
+        "latitude": -0.003049088642001152,
+        "activity_year": -0.29191550612449646,
+        "debt_to_income_ratio": 0.06672242283821106,
+        "signed_log_income": 0.12757711112499237,
+        "combined_loan_to_value_ratio": 0.16209131479263306,
+        "log_loan_amount": 0.3166007995605469
+      }
+    },
+    "permutation_mae_increase_bp": {
+      "linear": {
+        "activity_year": 0.2215449605208986,
+        "loan_amount": 10.564641135122589,
+        "income": 2.901442862784532,
+        "combined_loan_to_value_ratio": 3.0703360152906956,
+        "debt_to_income_ratio": 1.224803939035527,
+        "conforming_loan_limit": 0.07585140155943915,
+        "latitude": 0.06353179530041775,
+        "longitude": 0.005336570843200716
+      },
+      "xgboost": {
+        "activity_year": 1.2625611606112064,
+        "loan_amount": 8.701966100595254,
+        "income": 3.1985744938884544,
+        "combined_loan_to_value_ratio": 4.251450453792345,
+        "debt_to_income_ratio": 1.2334493293814264,
+        "conforming_loan_limit": 0.040467973530549095,
+        "latitude": 0.41890624572011426,
+        "longitude": 0.29592089357410534
+      }
+    }
+  }
+}

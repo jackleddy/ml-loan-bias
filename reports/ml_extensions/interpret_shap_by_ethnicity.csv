@@ -1,0 +1,9 @@
+feature,Hispanic or Latino,Not Hispanic or Latino
+conforming_loan_limit,0.14362596,0.03266891
+longitude,-0.06301468,0.35910708
+latitude,-0.6780489,-0.0030490886
+activity_year,-0.6505069,-0.2919155
+debt_to_income_ratio,2.5474317,0.06672242
+signed_log_income,-3.0861917,0.12757711
+combined_loan_to_value_ratio,4.3702836,0.16209131
+log_loan_amount,-0.8918563,0.3166008
