@@ -1,0 +1,13 @@
+target,comparison_group,feature_set,model,target_loans,comparison_loans,roc_auc,top_decile_lift
+Hispanic or Latino,Not Hispanic or Latino,with location,linear,25039,333131,0.7174372307947152,2.851152202564
+Hispanic or Latino,Not Hispanic or Latino,with location,xgboost,25039,333131,0.7618819640295491,3.7425616038979195
+Hispanic or Latino,Not Hispanic or Latino,without location,linear,25039,333131,0.6575499571380529,2.2780462478533487
+Hispanic or Latino,Not Hispanic or Latino,without location,xgboost,25039,333131,0.6813112582581367,2.6203123127920445
+Black or African American,White,with location,linear,31287,275638,0.692611916957522,2.2460173478073875
+Black or African American,White,with location,xgboost,31287,275638,0.7835035320444432,3.5625600339634467
+Black or African American,White,without location,linear,31287,275638,0.6443850639601664,1.8333791813039952
+Black or African American,White,without location,xgboost,31287,275638,0.667221259856003,2.1788957250609022
+Asian,White,with location,linear,44031,275638,0.7416249597923986,2.5373747011664225
+Asian,White,with location,xgboost,44031,275638,0.8301448186749363,3.8360417743198068
+Asian,White,without location,linear,44031,275638,0.69311418444459,2.341825147129161
+Asian,White,without location,xgboost,44031,275638,0.7206175623303512,2.6227714866693383
